@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root {
+            --button-height: 32px;
+            --button-bg: white;
+            --button-active-bg: #eee;
+            --font-size: 14px;
+            --border-radius: 4px;
+            --color: #999;
+            --border-color: #999;
+            --border-color-hover: #666;
+        }
+        body {
+            font-size: var(--font-size);
+        }
+        
+        #app {
+            margin: 20px;
+        }
+    </style>
+    <script type="module" src="./src/app.js"></script>
+</head>
+<body>
+    <div id="app">
+        <y-button></y-button>
+    </div>
+</body>
+</html>

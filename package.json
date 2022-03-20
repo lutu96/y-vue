@@ -1,0 +1,25 @@
+{
+  "name": "y-vue",
+  "version": "0.0.1",
+  "description": "这是一个关于vue2的ui组件库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://@github.com/lutu96/y-vue.git.git"
+  },
+  "keywords": [
+    "vue2"
+  ],
+  "author": "lutu96",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lutu96/y-vue.git/issues"
+  },
+  "homepage": "https://github.com/lutu96/y-vue.git#readme",
+  "dependencies": {
+    "vue": "^2.6.14"
+  }
+}

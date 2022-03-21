@@ -1,6 +1,7 @@
 <template>
   <button class="y-button" :class="{[`button-icon-${iconPosition}`]: true}">
-        <y-icon v-if="icon" class="icon" :name="icon"></y-icon>
+        <y-icon v-if="icon && !loading" class="icon" :name="icon"></y-icon>
+        <y-icon v-if="loading" class="loading icon" name="loading"></y-icon>
         <div class="content">
             <slot/>
         </div>
@@ -12,6 +13,10 @@ export default {
     props: {
         icon: {
             type: String
+        },
+        loading: {
+            type: String,
+            default: false
         },
         iconPosition: {
             type: String,
@@ -25,6 +30,14 @@ export default {
 </script>
 
 <style lang="scss">
+    @keyframes loading {
+        0% {
+            transform: rotate(0deg);;
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
     .y-button {
         display: inline-flex;
         justify-content: center;
@@ -64,5 +77,8 @@ export default {
         .content {
             order: 1;
         }
+    }
+    .loading {
+        animation: loading 2s infinite linear;
     }
 </style>

@@ -32,13 +32,17 @@
     <script type="module" src="./src/app.js"></script>
 </head>
 <body>
-    <script src="//at.alicdn.com/t/font_3263302_b5juvhq6sat.js"></script>
+    <script src="//at.alicdn.com/t/font_3263302_tjozxvqheih.js"></script>
     <div id="app">
         <y-button>按钮</y-button>
         <y-button icon="setting">设置</y-button>
         <y-button icon="download">下载</y-button>
         <y-button icon="awesome" icon-position="right">点赞</y-button>
-        <y-button icon="awesome" icon-position="up">点赞</y-button>  <!-- icon-position传值错误 -->
+        <!-- <y-button icon="awesome" icon-position="up">点赞</y-button> -->  <!-- icon-position传值错误 -->
+        <y-button icon="awesome" :loading="loading1">点赞</y-button>
+        <y-button icon="awesome" icon-position="left" :loading="loading2">点赞</y-button>
+        <y-button icon="awesome" icon-position="right" :loading="loading3">点赞</y-button>
+
     </div>
 </body>
 </html>

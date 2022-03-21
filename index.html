@@ -39,10 +39,18 @@
         <y-button icon="download">下载</y-button>
         <y-button icon="awesome" icon-position="right">点赞</y-button>
         <!-- <y-button icon="awesome" icon-position="up">点赞</y-button> -->  <!-- icon-position传值错误 -->
-        <y-button icon="awesome" :loading="loading1">点赞</y-button>
-        <y-button icon="awesome" icon-position="left" :loading="loading2">点赞</y-button>
-        <y-button icon="awesome" icon-position="right" :loading="loading3">点赞</y-button>
-
+        <y-button icon="awesome" :loading="loading1" @click="loading1 = !loading1">点赞</y-button>
+        <y-button icon="awesome" icon-position="left" :loading="loading2" @click="loading2 = !loading2">点赞</y-button>
+        <y-button icon="awesome" icon-position="right" :loading="loading3" @click="loading3 = !loading3">点赞</y-button>
+        <y-button-group>
+            <y-button icon="left">上一页</y-button>
+            <y-button icon="right" icon-position="right">下一页</y-button>
+        </y-button-group>
+        <y-button-group>
+            <y-button icon="left">上一页</y-button>
+            <y-button>更多</y-button>
+            <y-button icon="right" icon-position="right">下一页</y-button>
+        </y-button-group>
     </div>
 </body>
 </html>

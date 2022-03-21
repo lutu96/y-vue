@@ -1,8 +1,6 @@
 <template>
   <button class="y-button" :class="{[`button-icon-${iconPosition}`]: true}">
-        <svg v-if="icon" class="y-icon" aria-hidden="true">
-            <use :xlink:href="`#y-${icon}`"></use>
-        </svg>
+        <y-icon v-if="icon" class="icon" :name="icon"></y-icon>
         <div class="content">
             <slot/>
         </div>
@@ -48,14 +46,8 @@ export default {
             outline: none;
         }
     }
-    .y-icon {
-        width: 1em;
-        height: 1em;
-        overflow: hidden;
-
-    }
     .button-icon-left {
-        .y-icon {
+        .icon {
             order: 1;
             margin-right: .4em;
         }
@@ -65,7 +57,7 @@ export default {
     }
 
     .button-icon-right {
-        .y-icon {
+        .icon {
             order: 2;
             margin-left: .4em;
         }

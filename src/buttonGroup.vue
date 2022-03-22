@@ -6,7 +6,14 @@
 
 <script>
 export default {
-
+    mounted () {
+        for( let node of this.$el.children ) {
+            let name = node.nodeName.toLowerCase()
+            if (name !== 'button') {
+                console.error(`button-group组件子元素只能是button组件，而现在是${name}`)
+            }
+        }
+    }
 }
 </script>
 

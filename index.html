@@ -29,7 +29,7 @@
             margin: 20px;
         }
     </style>
-    <script type="module" src="./src/app.js"></script>
+    
 </head>
 <body>
     <script src="//at.alicdn.com/t/font_3263302_tjozxvqheih.js"></script>
@@ -43,8 +43,12 @@
         <y-button icon="awesome" icon-position="left" :loading="loading2" @click="loading2 = !loading2">点赞</y-button>
         <y-button icon="awesome" icon-position="right" :loading="loading3" @click="loading3 = !loading3">点赞</y-button>
         <y-button-group>
-            <y-button icon="left">上一页</y-button>
-            <y-button icon="right" icon-position="right">下一页</y-button>
+            <div>
+                <y-button icon="left">上一页</y-button>
+            </div>
+            <div>
+                <y-button icon="right" icon-position="right">下一页</y-button>
+            </div>
         </y-button-group>
         <y-button-group>
             <y-button icon="left">上一页</y-button>
@@ -52,5 +56,6 @@
             <y-button icon="right" icon-position="right">下一页</y-button>
         </y-button-group>
     </div>
+    <script src="./src/app.js"></script>
 </body>
 </html>

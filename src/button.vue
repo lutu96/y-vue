@@ -15,7 +15,7 @@ export default {
             type: String
         },
         loading: {
-            type: String,
+            type: Boolean,
             default: false
         },
         iconPosition: {

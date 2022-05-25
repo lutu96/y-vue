@@ -36,7 +36,7 @@ export default {
             }
             &:hover {
                 position: relative;
-                index: 1;
+                z-index: 1;
             }
         }
     }

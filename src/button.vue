@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import Icon from './icon.vue'
 export default {
     props: {
         icon: {
@@ -25,6 +26,9 @@ export default {
                 return value === 'left' || value === 'right'
             }
         }
+    },
+    components: {
+        'y-icon': Icon
     }
 }
 </script>

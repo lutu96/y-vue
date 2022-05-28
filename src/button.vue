@@ -54,7 +54,8 @@ export default {
         border: 1px solid var(--border-color);
         background: var(--button-bg);
         &:hover {
-            border-color: var(--border-color-hover)
+            border-color: var(--border-color-hover);
+            cursor: pointer;
         }
         &:active {
             background: var(--button-active-bg);

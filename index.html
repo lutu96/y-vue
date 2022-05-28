@@ -28,6 +28,11 @@
         #app {
             margin: 20px;
         }
+
+        .demo {
+            height: 20px;
+            border: 1px solid red;
+        }
     </style>
     
 </head>
@@ -58,6 +63,39 @@
             <y-input error="填写错误"></y-input>
             <y-input v-model="message" @change="onInputChange"></y-input>
             <y-button @click="onClick">增加</y-button>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <div>
+            <y-row gutter="20">
+                <y-col span="2">
+                    <div class="demo"></div>
+                </y-col>
+                <y-col span="20" offset="2">
+                    <div class="demo"></div>
+                </y-col>
+            </y-row>
+            <y-row>
+                <y-col span="12">
+                    <y-row gutter="5">
+                        <y-col span="2">
+                            <div class="demo"></div>
+                        </y-col>
+                    </y-row>
+                </y-col>
+                <y-col span="10" offset="2">
+                    <div class="demo"></div>
+                </y-col>
+            </y-row>
+            <y-row align="left">
+                <y-col span="2">
+                    <div class="demo"></div>
+                </y-col>
+                <y-col span="10" offset="2">
+                    <div class="demo"></div>
+                </y-col>
+            </y-row>
         </div>
     </div>
     <script src="./src/app.js"></script>

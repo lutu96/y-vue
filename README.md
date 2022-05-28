@@ -5,5 +5,5 @@
 
 ## 开始使用
 
-
+npm i --save y-vue
 

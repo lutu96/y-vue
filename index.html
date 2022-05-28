@@ -38,7 +38,7 @@
 </head>
 <body>
     <div id="app">
-        <div>
+        <!-- <div>
             <y-button>按钮</y-button>
             <y-button icon="setting">设置</y-button>
             <y-button icon="download">下载</y-button>
@@ -104,7 +104,36 @@
                     <div class="demo"></div>
                 </y-col>
             </y-row>
-        </div>
+        </div> -->
+        <!-- <y-layout>
+            <y-header>
+                <div class="demo"></div>
+            </y-header>
+            <y-content>
+                <div class="demo"></div>
+            </y-content>
+            <y-footer>
+                <div class="demo"></div>
+            </y-footer>
+        </y-layout> -->
+
+        <y-layout>
+            <y-header>
+                <div class="demo"></div>
+            </y-header>
+            <y-layout>
+                <y-sider style="width: fit-content">
+                    <div class="demo" style="width: 200px"></div>
+                </y-sider>
+                <y-content>
+                    <div class="demo"></div>
+                </y-content>
+            </y-layout>
+            <y-footer>
+                <div class="demo"></div>
+            </y-footer>
+        </y-layout>
+        
     </div>
     <script src="./src/app.js"></script>
 </body>
